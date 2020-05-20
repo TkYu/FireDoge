@@ -1,24 +1,4 @@
 ﻿
-
-/*
-chrome ui tree
-
-
-browser/ui/views/frame/BrowserRootView
-ui/views/window/NonClientView
-BrowserView
-    TopContainerView
-        TabStrip
-            Tab
-                TabCloseButton
-            ImageButton
-        ToolbarView
-            LocationBarView
-                OmniboxViewViews
-    BookmarkBarView
-        BookmarkButton
-*/
-
 std::wstring GetName(__in CComPtr<IAccessible> pAcc, __in CComVariant varChild = CHILDID_SELF)
 {
     if (!pAcc)
@@ -1153,15 +1133,6 @@ LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARAM lParam)
   //              bookmark_new_tab = true;
   //          }
   //      }
-        //if (wParam == WM_LBUTTONUP && BookMarkNewTab && HandleMenu && !IsPressed(VK_CONTROL))
-        //{
-        //	HWND hwnd = WindowFromPoint(pmouse->pt);
-        //	wchar_t name[MAX_PATH];
-        //	if (GetClassName(hwnd, name, MAX_PATH) && wcscmp(name, L"Chrome_WidgetWin_2") == 0)
-        //	{
-        //		menu_bookmark_new_tab = true;
-        //	}
-        //}
 
         if(TopContainerView)
         {

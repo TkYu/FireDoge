@@ -13,6 +13,18 @@ std::wstring GetCommand(const wchar_t *iniPath, LPWSTR commandLine)
         if(i==0) //在进程路径后面追加参数
         {
             command_line.push_back(L"-with-firedoge");
+            /*
+            // 如果需要修改新标签空白，还需要添加一个命令，否则使用的是在线版
+            if(BlankNewTab)
+            {
+                command_line.push_back(L"--force-local-ntp");
+            }
+            if (RemoveDevelopError)
+            {
+                command_line.push_back(L"--enable-automation");
+                command_line.push_back(L"--disable-infobars");
+            }
+            */
 
             auto contents = GetSection(L"AppendParams", iniPath);
             for (auto &parameter_str : contents)

@@ -158,10 +158,6 @@ void init_global_env(const wchar_t *iniPath)
     {
         //wcscpy(localdata_path, iniPath);
         //PathRemoveFileSpecW(localdata_path);
-        ////wcscat(localdata_path, L"\\LocalAppData");
-        //wcscat(localdata_path, L"\\");
-        //wcscat(localdata_path, profileFolder);
-        //wcscat(localdata_path, L"\\Cache");
         wcscpy(localdata_path, appdata_path);
         wcscat(localdata_path, L"\\Cache");
         //DebugLog(L"localdata_path = %s", localdata_path);

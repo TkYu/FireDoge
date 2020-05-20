@@ -42,13 +42,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -174,16 +174,11 @@
     <ClInclude Include="src\Bosskey.h" />
     <ClInclude Include="src\CustomCommand.h" />
     <ClInclude Include="src\FastSearch.h" />
-    <ClInclude Include="src\GetParent.h" />
-    <ClInclude Include="src\GreenChrome.h" />
+    <ClInclude Include="src\FireDoge.h" />
     <ClInclude Include="src\hijack.h" />
-    <ClInclude Include="src\hosts.h" />
     <ClInclude Include="src\http.h" />
     <ClInclude Include="src\Loader.h" />
-    <ClInclude Include="src\ModifyLnk.h" />
-    <ClInclude Include="src\PakFile.h" />
     <ClInclude Include="src\Parsekeys.h" />
-    <ClInclude Include="src\PatchResourcesPak.h" />
     <ClInclude Include="src\Patchs.h" />
     <ClInclude Include="src\SettingWeb.h" />
     <ClInclude Include="src\SharedConfig.h" />
@@ -199,7 +194,7 @@
     <ClCompile Include="3rd\minhook\src\trampoline.c" />
     <ClCompile Include="3rd\mini_gzip\miniz.c" />
     <ClCompile Include="3rd\mongoose\mongoose.c" />
-    <ClCompile Include="src\GreenChrome.cpp" />
+    <ClCompile Include="src\FireDoge.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="res\FireDoge.rc" />

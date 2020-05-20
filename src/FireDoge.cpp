@@ -1,6 +1,6 @@
-﻿#include "GreenChrome.h"
+﻿#include "FireDoge.h"
 
-void GreenChrome(LPWSTR command_line)
+void FireDoge(LPWSTR command_line)
 {
     // exe路径
     wchar_t exePath[MAX_PATH];
@@ -18,7 +18,7 @@ void GreenChrome(LPWSTR command_line)
     // 读取配置
     ReadConfig(iniPath);
 
-    // 父进程不是Firefox，则需要启动追加参数功能
+    // 父进程不是FF的话，则需要启动追加参数功能
  //   bool with_firedoge = wcsstr(command_line, L"-with-firedoge") != 0;
  //   if (!with_firedoge)
  //   {
@@ -37,7 +37,7 @@ void GreenChrome(LPWSTR command_line)
         //{
         //    DebugLog(L"子进程启动，id %ld", ::GetCurrentProcessId());
         //}
-        // 打造便携版chrome
+        // 打造便携
         MakePortable(iniPath);
 
         // 标签页，书签，地址栏增强

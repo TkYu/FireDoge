@@ -1,16 +1,17 @@
 ﻿
 typedef int (*Startup) ();
-Startup ChromeMain = NULL;
+Startup FirefoxMain = NULL;
 
 //
 int Loader()
 {
     LPWSTR command_line = GetCommandLineW();
 	//DebugLog(L"Loader %s", command_line);
-	GreenChrome(command_line);
 
-    //返回到Chrome
-    return ChromeMain();
+	FireDoge(command_line);
+
+    //返回到FF
+    return FirefoxMain();
 }
 
 void InstallLoader()
@@ -21,7 +22,7 @@ void InstallLoader()
     PBYTE entry = (PBYTE)mi.EntryPoint;
 
     // 入口点跳转到Loader
-    MH_STATUS status = MH_CreateHook(entry, Loader, (LPVOID*)&ChromeMain);
+    MH_STATUS status = MH_CreateHook(entry, Loader, (LPVOID*)&FirefoxMain);
     if (status == MH_OK)
     {
         MH_EnableHook(entry);

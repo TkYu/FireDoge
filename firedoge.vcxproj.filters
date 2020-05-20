@@ -24,16 +24,10 @@
     <ClInclude Include="src\FastSearch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\GetParent.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GreenChrome.h">
+    <ClInclude Include="src\FireDoge.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\hijack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\hosts.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\http.h">
@@ -42,16 +36,7 @@
     <ClInclude Include="src\Loader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\ModifyLnk.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\PakFile.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\Parsekeys.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\PatchResourcesPak.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\Patchs.h">
@@ -101,7 +86,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\GreenChrome.cpp">
+    <ClCompile Include="src\FireDoge.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="3rd\cjson\cJSON.c">
