@@ -1,21 +1,27 @@
 # FireDoge
 
-一个Firefox增强扩展
+[English](README.md) | [简体中文](README_ZH.md) 
+
+![gesture](gesture.jpg)
+
+A Firefox extension that make Firefox portability and gestures by dll injection
+
+`Please consider that the current version of Firefox has disabled the dll injection, this repository is only for learning now`
 
 
 
-## 引用的第三方库
+## Referenced 3rd party libraries
 
-[GreenChrome](https://gitee.com/shuax/GreenChrome) (src/gesture)提供手势处理逻辑 （鸣谢[shuax](https://github.com/shuax)）
+[GreenChrome](https://gitee.com/shuax/GreenChrome) (src/gesture) Provides gesture processing logic  (**Thanks [shuax](https://github.com/shuax)**)
 
-[minhook](https://github.com/TsudaKageyu/minhook) (3rd/minhook)提供快速简便的劫持处理
+[minhook](https://github.com/TsudaKageyu/minhook) (3rd/minhook) Provides easy hijacking function
 
-[cjson](https://github.com/DaveGamble/cJSON) (3rd/cjson) 提供轻量json文件处理
+[cjson](https://github.com/DaveGamble/cJSON) (3rd/cjson) Provides lightweight json processing
 
-[wtl](https://github.com/dacci/wtl) (3rd/wtl) 提供WTL函数包装
+[wtl](https://github.com/dacci/wtl) (3rd/wtl) Provide WTL function wrapping
 
-[mini_gzip](https://github.com/shuax/mini_gzip) (3rd/mini_gzip) 提供gzip处理
+[mini_gzip](https://github.com/shuax/mini_gzip) (3rd/mini_gzip) Provide gzip processing
 
-[mongoose](https://github.com/cesanta/mongoose) (3rd/mongoose) 提供轻量web请求处理
+[mongoose](https://github.com/cesanta/mongoose) (3rd/mongoose) Provides lightweight web request processing
 
-[VC-LTL](https://github.com/Chuyu-Team/VC-LTL) (Shared.props) 一个基于微软VC修改的开源运行时，有效减少应用程序体积并摆脱微软运行时DLL
+[VC-LTL](https://github.com/Chuyu-Team/VC-LTL) (Shared.props)  A runtime based on Microsoft VC modifications that effectively reduces application size
