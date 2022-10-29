@@ -744,7 +744,7 @@ IAccessible* GetLocationBarView(IAccessible *top)
             {
                 const auto childcount = GetChildCount(child);
                 //DebugLog(L"GetLocationBarView %s | %s | %s | %d", GetName(child).c_str(), GetRole(child).c_str(), GetValue(child).c_str(), childcount);
-                if(childcount>1)
+                if(childcount>0)
                 {
                     LocationBarView = child;
                     return true;
